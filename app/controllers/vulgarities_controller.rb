@@ -1,6 +1,6 @@
 class VulgaritiesController < ApplicationController
   def index
-    @vulgarity = Vulgarity.random
+    @vulgarity = Vulgarity.random(params)
 
     respond_to do |format|
       format.html

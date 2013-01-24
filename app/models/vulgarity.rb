@@ -3,7 +3,9 @@ class Vulgarity < ActiveRecord::Base
 
   attr_accessible :text
 
-  def self.random
-    order('random()').first
+  def self.random(options = {})
+    scope = order('random()')
+    scope = scope.where('lower(text) ilike ?', "#{options[:letter]}%") if options[:letter].present?
+    scope.first || order('random()').first
   end
 end

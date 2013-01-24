@@ -20,7 +20,7 @@ describe VulgaritiesController do
       vulgarity = FactoryGirl.create(:vulgarity)
       Vulgarity.stub(random: vulgarity)
       get :index, format: :xml
-      response.body.should include "<text>#{vulgarity tedt}</text>"
+      response.body.should include "<text>#{vulgarity.text}</text>"
     end
   end
 end
