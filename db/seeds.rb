@@ -10148,7 +10148,10 @@ def initial_vulgarities
     "Rough trade",
     "Trick",
     "Weenie",
-    "Yodeling in the gully"
+    "Yodeling in the gully",
+    "Hatchet wound",
+    "Fuck starting your face",
+    "Bitch wrinkle"
   ]
 end
 
