@@ -8,5 +8,19 @@ describe VulgaritiesController do
       get :index
       assigns(:vulgarity).should == vulgarity
     end
+
+    it 'will give you json if you ask' do
+      vulgarity = stub(as_json: { stuff: 'things' } )
+      Vulgarity.stub(random: vulgarity)
+      get :index, format: :json
+      response.body.should == '{"stuff":"things"}'
+    end
+
+    it 'will give you xml if you ask' do
+      vulgarity = FactoryGirl.create(:vulgarity)
+      Vulgarity.stub(random: vulgarity)
+      get :index, format: :xml
+      response.body.should include "<text>#{vulgarity tedt}</text>"
+    end
   end
 end
