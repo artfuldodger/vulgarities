@@ -4,6 +4,9 @@ gem 'rails'
 gem 'pg'
 gem 'jquery-rails'
 gem 'capistrano'
+gem "twitter-bootstrap-rails"
+gem "therubyracer"
+gem "less-rails"
 
 group :assets do
   gem 'sass-rails',   '~> 3.2.3'
