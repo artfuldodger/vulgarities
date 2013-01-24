@@ -11,6 +11,14 @@ group :assets do
   gem 'uglifier', '>= 1.0.3'
 end
 
+group :development, :test do
+  gem 'rspec-rails'
+  gem 'factory_girl_rails'
+  gem 'autotest-rails'
+  gem 'ZenTest', '4.8.3'
+  gem 'shoulda-matchers'
+end
+
 group :development do
   gem 'capistrano'
   gem "capistrano-db-tasks", github: 'artfuldodger/capistrano-db-tasks'
