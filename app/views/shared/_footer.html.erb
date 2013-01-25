@@ -1,13 +1,13 @@
 <div class="navbar navbar-fixed-bottom" id="footer">
 
-  <span id="github">
-    <%= link_to 'Source', 'http://www.github.com/artfuldodger/vulgarities' %>
+  <span id="api">
+    <%= params[:controller] == 'apis' ? link_to('Home', root_path) : link_to('API', api_path) %>
   </span>
 
   |
 
-  <span id="api">
-    <%= link_to 'API', api_path %>
+  <span id="github">
+    <%= link_to 'Source', 'http://www.github.com/artfuldodger/vulgarities' %>
   </span>
 
   |
