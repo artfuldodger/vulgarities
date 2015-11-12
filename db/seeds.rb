@@ -11,7 +11,6 @@ def initial_vulgarities
     "annaly inserted fuckface",
     "aass fucking brokedick jewcunt",
     "ASS BANGING SAND white boy",
-    "Austin Harrison",
     "Anuswax",
     "America!",
     "ass licking taint tickler",
